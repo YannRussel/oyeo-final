@@ -1,0 +1,229 @@
+/*******   LOGO OYEO  **************/
+#logo_oyeo{ font-size: 30px;}
+#logo_oyeo span span{color: orangered;}
+
+
+/*=========== topbar ============*/
+.topbar { background-color: rgba(13, 195, 250, 0.082); color: gray; font-size: 1vw; }
+
+.service-client{ color: #040718; text-decoration: none; transition: 0.5s;}
+.topbar .lienshaut a{ color: #040718; text-decoration: none; transition: 0.5s;}
+.topbar .lienshaut a span, .service-client span{ color: #040718;}
+
+.topbar .lienshaut a:nth-child(2){ padding-left: 10px; padding-right: 10px; }
+.topbar .lienshaut a:hover, .topbar .lienshaut a span:hover{ color: #088178; text-decoration: underline;}
+.livraison-bloc{ font-weight: 600; color: #333;}
+
+/*=========  BLOCK : OYEO , BLOC SEARCH , FAVORIS-PANIER-MON COMPTE ============*/
+.actions { color: var(--gray); display: flex;}
+.actions .icon {padding: 10px; /* font-size: 16px;  */font-weight: 400; text-decoration: none; }
+.actions .icon i{font-size: 1.3vw; color: var(--primary)!important; }
+.actions .icon .icon_text{ font-size: 1.1vw; color: var(--gray)!important; }
+.blocsearch { width: 50%; margin: 0px 12px;}
+#searchInput { border-radius: 50px; padding: 8px 15px !important; font-size: 0.85rem;}
+#searchInput:focus { box-shadow: none !important; border-color: #ced4da !important;}
+.logo {font-weight: bold;}
+.logo .dot {color: var(--primary);}
+
+
+
+
+
+/*========= MENU DE NAVIGATION ==================================================*/
+.maNavigation {z-index:15!important;position: relative;font-size: 1.05vw;}
+.menu-bar a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 520;
+  transition: 0.3s;
+}
+.menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height: 48px;
+}
+.menu-bar ul {
+  display:flex!important;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+.menu-bar ul li {
+  display: block;
+  padding: 12px  1.09vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+  /* border:1px solid green; */
+  transition: 0.3s ease-in-out;
+}
+.menu-bar ul li:hover a {
+  color: var(--primary);
+}
+.menu-bar ul li:hover .sub-menu-1 a {
+  color: #ffffff;
+}
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 div div a {
+  color: var(--black) !important;
+  padding: 3px 0px;
+   flex-grow: 1;
+  flex-shrink: 1;
+}
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 div div a:hover {
+  color: var(--primary) !important;
+}
+.menu-bar ul li ul li:hover a {
+  color: var(--primary_hover) !important;
+}
+.sub-menu-1 {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 {
+  background-color: var(--bg-naviguation);
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+}
+.menu-bar ul li .sub-menu-1 ul {
+  display: inline-flex;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+.sub-menu-2 {
+  display: none;
+}
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 {
+  background-color: #ffffff;
+  border-bottom: 5px solid var(--bg-naviguation);
+  padding: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul {
+  display: block;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+.menu-bar ul li .sub-menu-1 a {
+  display: block;
+  list-style: none;
+  list-style-type: 0;
+}
+.image_navbar {
+    background-size: cover;
+    height: 120px;
+    background-position: center;
+    transition: .3s;
+}
+.image_navbar:hover {
+    transform: scale(.95);
+}
+
+
+
+
+
+
+/* pour les taille a partir de : 1400 */
+
+@media screen and ( max-width : 1400px) {
+
+
+}
+
+
+
+
+
+/* pour les taille a partir de : 1024 */
+@media screen and ( max-width : 1024px) {
+/*=========== topbar ============*/
+.topbar {font-size: 0.7rem; }
+
+  /*******   LOGO OYEO  **************/
+#logo_oyeo{ font-size: 20px;}
+/*=========  BLOCK : OYEO , BLOC SEARCH , FAVORIS-PANIER-MON COMPTE ============*/
+.actions .icon {padding: 2px 5px;  font-weight: 400; text-decoration: none; }
+.actions .icon i{font-size: 0.8rem;}
+.blocsearch { width: 50%; margin: 0px 10px;}
+#searchInput { border-radius: 50px; padding: 7px 10px !important; font-size: 0.8rem;}
+
+/*===============   BARRE DE NAVIGATION =================================*/
+.menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height: auto;
+}
+.menu-bar ul {
+  display: block;
+  list-style: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width : 800px) {
+/*   .menu-bar * {
+    font-size: 95%;
+  } */
+  .menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height:fit-content;
+}
+.menu-bar ul {
+  display: block;
+  list-style: none;
+}
+
+.actions .icon .icon_text{ display: none;}
+.actions .icon {padding: 10px 11px; }
+
+
+#allnavigationBar{ display: none;}
+.topbar .text{ display: none!important;}
+}
