@@ -8,7 +8,6 @@
 
 
     --bg-naviguation :   #02020ebb;
-
     /********* PROUDIT ***********/
     --card-shadow: 0 6px 18px rgba(16, 23, 39, 0.103);
     --round: 12px;
@@ -18,7 +17,7 @@
 }
 
 /*********    BODY STYLE   *******************************/
-body{ margin: 0; padding : 0; }
+body{ margin:0; padding:0; }
 /*********    DEDEFINITION DES CLASSES BOOTSTRAP *********/
 
 .btn-primary{ background-color: var(--primary); border: 1px solid var(--primary);}

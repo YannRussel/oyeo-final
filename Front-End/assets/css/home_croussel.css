@@ -27,7 +27,6 @@
 }
 .wrapper-text-principal{
  max-width: 50%;
-  
 }
 .slide-content-wrapper {
  /*  position: absolute;
@@ -149,7 +148,7 @@
   .wrapper-text-principal{
     max-width: 100%; 
     text-align: center;
-    border: 1px solid red;
+    border: 1px solid rgb(0, 0, 0);
   }
 
   .slide-content-wrapper h1 {
