@@ -1,0 +1,366 @@
+/*******   LOGO OYEO  **************/
+#logo_oyeo{ font-size: 30px;}
+#logo_oyeo span span{color: orangered;}
+
+
+/*=========== topbar ============*/
+.topbar { background-color: rgba(13, 195, 250, 0.082); color: gray; font-size: 1vw; border:1px solid red;}
+
+.service-client{ color: #040718; text-decoration: none; transition: 0.5s;}
+.topbar .lienshaut a{ color: #040718; text-decoration: none; transition: 0.5s;}
+.topbar .lienshaut a span, .service-client span{ color: #040718;}
+
+.topbar .lienshaut a:nth-child(2){ padding-left: 10px; padding-right: 10px; }
+.topbar .lienshaut a:hover, .topbar .lienshaut a span:hover{ color: #088178; text-decoration: underline;}
+.livraison-bloc{ font-weight: 600; color: #333;}
+
+/*=========  BLOCK : OYEO , BLOC SEARCH , FAVORIS-PANIER-MON COMPTE ============*/
+.actions { color: var(--gray); display: flex;  border:1px solid black; justify-content: space-between; align-items: center;}
+.actions .icon {padding: 10px; /* font-size: 16px;  */font-weight: 400; text-decoration: none; }
+.actions .icon i{font-size: 1.3vw; color: var(--primary)!important; }
+.actions .icon .icon_text{ font-size: 1rem; color: var(--gray)!important; }
+.blocsearch { width: 50%; margin: 0px 12px;}
+#searchInput { border-radius: 50px; padding: 8px 15px !important; font-size: 0.85rem;}
+#searchInput:focus { box-shadow: none !important; border-color: #ced4da !important; }
+.logo {font-weight: bold;}
+.logo .dot {color: var(--primary);}
+.blocsearch{  border:1px solid rgb(94, 14, 199) }
+.logo{  border:1px solid rgb(57, 199, 14) }
+
+
+#menubtn{ display: none; font-size: 15px; height: 35px;}
+header{  width: 90%; margin: auto; }
+
+
+/*========= MENU DE NAVIGATION ==================================================*/
+
+.navbarre_linkCategorie_fleche , .navbarre_linkSouSCategorie_fleche, .phone_sousCategorie{ display: none;  }
+.maNavigation {z-index:15!important;position: relative;font-size: 1.05vw; border: 5px solid green; width: 90%; margin: auto;}
+
+.menu-bar a {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: 520;
+  transition: 0.3s;
+}
+.menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height: 48px;
+}
+.menu-bar ul {
+  display:flex!important;
+  width: 100%;
+  justify-content: space-between;
+  list-style: none;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+.menu-bar ul li {
+  display: block;
+  padding: 12px  1.09vw;
+  flex-grow: 1;
+  flex-shrink: 1;
+   border:1px solid green; 
+  transition: 0.3s ease-in-out;
+}
+
+.menu-bar ul li:hover a {
+  color: var(--primary);
+}
+.menu-bar ul li:hover .sub-menu-1 a {
+  color: #ffffff;
+}
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 div div a {
+  color: var(--black) !important;
+  padding: 3px 0px;
+   flex-grow: 1;
+  flex-shrink: 1;
+}
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 div div a:hover {
+  color: var(--primary) !important;
+}
+.menu-bar ul li ul li:hover a {
+  color: var(--primary_hover) !important;
+}
+.sub-menu-1 {
+  display: none;
+}
+.menu-bar ul li:hover .sub-menu-1 .navbarre_linkSouSCategorie_fleche{ display: none;}
+
+
+.menu-bar ul li:hover .sub-menu-1 {
+  background-color: var(--bg-naviguation);
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+}
+.menu-bar ul li .sub-menu-1 ul {
+  display: inline-flex;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+.sub-menu-2 {
+  display: none;
+}
+.menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 {
+  background-color: #ffffff;
+  border-bottom: 5px solid var(--bg-naviguation);
+  padding: 15px;
+  display: block;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  margin-top: 12px;
+  max-height: 60vh;
+  overflow-y: auto;
+}
+.menu-bar ul li .sub-menu-1 ul li .sub-menu-2 ul {
+  display: block;
+  text-align: left;
+  list-style: none;
+  list-style-type: 0;
+}
+.menu-bar ul li .sub-menu-1 a {
+  display: block;
+  list-style: none;
+  list-style-type: 0;
+}
+.image_navbar {
+    background-size: cover;
+    height: 120px;
+    background-position: center;
+    transition: .3s;
+}
+.image_navbar:hover {
+    transform: scale(.95);
+}
+
+
+
+
+
+
+/* pour les taille a partir de : 1400 */
+
+@media screen and ( max-width : 1400px) {
+
+
+}
+
+
+
+
+
+/* pour les taille a partir de : 1024 */
+@media screen and ( max-width : 1024px) {
+/*=========== topbar ============*/
+.topbar {font-size: 0.7rem; }
+
+  /*******   LOGO OYEO  **************/
+#logo_oyeo{ font-size: 20px;}
+/*=========  BLOCK : OYEO , BLOC SEARCH , FAVORIS-PANIER-MON COMPTE ============*/
+.actions .icon {padding: 2px 5px;  font-weight: 400; text-decoration: none; }
+.actions .icon i{font-size: 1rem;}
+.blocsearch { width: 50%; margin: 0px 10px;}
+#searchInput { border-radius: 50px; padding: 7px 10px !important; font-size: 0.8rem;}
+
+/*===============   BARRE DE NAVIGATION =================================*/
+.menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height: auto;
+}
+.menu-bar ul {
+  display: block;
+  list-style: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and ( max-width : 800px) {
+/*   .menu-bar * {
+    font-size: 95%;
+  } */
+  .menu-bar {
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  /* Pour s’étendre sur tout le parent */
+  z-index: 1000;
+  /* Toujours au-dessus des sous-menus */
+  background-color: white;
+  height:fit-content;
+}
+.menu-bar ul {
+  display: block;
+  list-style: none;
+}
+
+.actions .icon .icon_text{ display: none;}
+.actions .icon {padding: 10px 11px; }
+
+
+.maNavigation{ width: 100%; font-size: 0.90rem;}
+#allnavigationBar{ 
+  display: none;
+  position: fixed!important;
+  z-index: 1002!important;
+  height: 90vh;
+
+  left: 0%;
+  width: 87%!important;
+  right: 1px;
+  top:0px; 
+
+  overflow: auto;
+  border: 2px solid  rgb(255, 0, 0); }
+
+header{  width: 98%; margin: auto; }
+#menubtn{ display: block;}
+#smallMenu{ 
+  position: sticky!important; top:0px;
+  background-color: white;
+  z-index: 1001;
+}
+.topbar .text{ display: none!important;}
+
+
+/* .navbarre_linkCategorie, .navbarre_linkSouSCategorie { display: flex; justify-content: space-between; align-items: center; width: 100%;}
+ */
+
+ .navbarre_linkCategorie_fleche, .navbarre_linkSouSCategorie_fleche, .phone_sousCategorie{ display: inline-block;}
+
+ .desktop_sousCategorie{ display: none;}
+
+
+
+ .navbarre_linkCategorie_fleche{ border: 2px solid black;}
+ .navbarre_linkSouSCategorie_fleche{ border: 2px solid rgb(200, 255, 0);}
+.menu-bar ul {
+  display:flex!important;
+  width: 100%;
+  /* justify-content: center; */
+  flex-direction: column;
+
+  list-style: none;
+  /* border: 1px solid red; */
+  margin: 0;
+  padding: 0;
+}
+.menu-bar ul li .navbarre_linkCategorie {
+  display:flex; 
+  justify-content: space-between;
+  background-color: red !important; 
+  width: 100%;
+  border:5px solid red;
+
+}
+
+
+.menu-bar ul li {
+  border:5px solid rgb(0, 217, 255);
+  width: 100%;
+  display: block;
+  margin-bottom: 5px;
+}
+
+    .menu-bar ul li:hover .sub-menu-1 {
+
+      position: static!important;
+      /* z-index: 1002; */
+    
+      width: 85%!important;
+      content: "";
+      clear: both;
+
+    }
+    .menu-bar ul li .sub-menu-1 ul li:hover .sub-menu-2 {
+      padding: 15px;
+      margin-top: 0px;
+      height: auto;
+     position: static!important;
+    /*   z-index: 1004; */
+
+
+
+      background-color: deeppink;
+
+    } 
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* @media (hover: hover) and (pointer: fine) {
+    .menu-bar ul li:hover + .sub-menu-1 {
+      background-color: var(--bg-naviguation);
+      display: block;
+      margin-top: 12px; 
+
+      top: 0px;
+      position: fixed;
+      z-index: 1002;
+      left: 0%;
+      width: 85%!important;
+      right: 1px;
+    }
+    .menu-bar ul li .sub-menu-1 ul li:hover + .sub-menu-2 {
+      padding: 15px;
+      margin-top: 0px;
+
+      top: 0px;
+      position: fixed;
+      z-index: 1004;
+      left: 0%;
+      width: 85%!important;
+      right: 1px;
+
+      background-color: deeppink;
+
+    }
+}
+ */
