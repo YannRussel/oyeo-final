@@ -23,6 +23,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 
     
 
@@ -63,8 +64,9 @@
 
     <!-- Quick global typography enforcement -->
     <style>
-        /* final typography enforcement: apply Quicksand but preserve footer and slider */
-        body, body *:not(.site-footer):not(.site-footer *):not(.slide-content-wrapper):not(.slide-content-wrapper *) {
+        /* final typography enforcement: apply Quicksand but preserve footer, slider and product cards */
+        /* Exclude .product-card and its children so product-specific fonts (e.g. DM Sans) can apply */
+        body, body *:not(.site-footer):not(.site-footer *):not(.slide-content-wrapper):not(.slide-content-wrapper *):not(.product-card):not(.product-card *) {
           font-family: 'Quicksand', sans-serif !important;
         }
 

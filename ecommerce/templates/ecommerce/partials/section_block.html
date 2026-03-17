@@ -8,12 +8,14 @@
 
 {% if section %}
 <section class="product-section" id="section-{{ section.slug }}"
-  {% if section.slug == 'offres-du-jours' or section.slug == 'tendances-du-moment' %} style="font-family: 'Anton', sans-serif !important;" {% endif %}>
-  <div class="section-header">
-    <h2 class="section-title" {% if section.slug == 'offres-du-jours' or section.slug == 'tendances-du-moment' %} style="font-family: 'Urbanist', sans-serif !important; font-size:34px; font-weight: 500 !important;" {% endif %}>{{ section.name }}</h2>
-      {% if show_see_more and section_url %}
+  {% if section.slug == 'offres-du-jours' or section.slug == 'tendances-du-moment' or section.slug == 'mode-bien-etre' or section.slug == 'maison-deco-pratique' or section.slug == 'cuisine-alimentation' %} style="font-family: 'DM Sans', sans-serif !important;" {% endif %}>
+  <div class="section-header" style="display:flex;justify-content:space-between;align-items:center;gap:16px;">
+    <div style="flex:1">{% if section.slug != 'marque-pour-tous' and section.slug != 'sponsorise' %}
+      <h2 class="section-title" {% if section.slug == 'offres-du-jours' or section.slug == 'tendances-du-moment' or section.slug == 'mode-bien-etre' or section.slug == 'maison-deco-pratique' or section.slug == 'cuisine-alimentation' %} style="font-family: 'DM Sans', sans-serif !important; font-size:34px; font-weight: 500 !important;" {% endif %}>{{ section.name }}</h2>
+    {% endif %}</div>
+    <div style="flex:0 0 auto">{% if show_see_more and section_url %}
       <span class="see-more disabled" aria-disabled="true">Voir plus</span>
-    {% endif %}
+    {% endif %}</div>
   </div>
 
   <div class="product-carousel-wrapper" tabindex="0" aria-label="{{ section.name }}">
@@ -137,6 +139,11 @@
      (Si tu as un fichier CSS global : copie-colle ces règles dedans)
      ========================= -->
 <style>
+/* Force DM Sans for product cards rendered from this partial (inline / highest priority) */
+.product-card, .product-card * {
+  font-family: 'DM Sans', sans-serif !important;
+}
+
 /* position & look */
 .product-card { position: relative; border-radius: 10px; overflow: hidden; background: #fff; box-shadow: 0 6px 14px rgba(0,0,0,0.04); }
 .fav-icon { position: absolute; top: 8px; right: 8px; cursor: pointer; z-index: 7; transition: transform .18s ease, opacity .12s ease; }

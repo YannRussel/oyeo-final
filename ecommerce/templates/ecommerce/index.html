@@ -93,13 +93,13 @@
     {% render_section 'tendances-du-moment' 8 %}
 
     </br>
-    <section class="sponsored">
+    <section class="sponsored" style="background: linear-gradient(rgba(0,0,0,0.12), rgba(0,0,0,0.12)), #d32f2f !important; color: #ffffff !important;">
         <div class="sponsored-inner">
             <!-- Colonne texte -->
             <div class="sponsored-left">
-                <div class="sponsored-label">Sponsorisé</div>
-                <h2 class="sponsored-title">Tommy Hilfiger<br><span class="sponsored-subtitle">Nouvelles
-                        chaussures</span>
+                <div class="sponsored-label" style="font-family: 'DM Sans', sans-serif !important; font-size:30px; display:inline-block; transform: translateY(-30px); color: #fff !important;">Sponsorisé</div>
+                <h2 class="sponsored-title" style="font-family: 'DM Sans', sans-serif !important; color: #ffffff !important;">Oyéo Level<br><span class="sponsored-subtitle" style="font-family: 'DM Sans', sans-serif !important; color: rgba(255,255,255,0.95) !important;">Nouvelles
+                    chaussures</span>
                 </h2>
 
                 <a class="sponsored-cta cta-asym" href="#" aria-label="Découvrir la collection">
@@ -108,11 +108,9 @@
             </div>
 
             <!-- Colonne image -->
-            <div class="sponsored-right" role="img" aria-label="Visuel Tommy Hilfiger">
-                <!-- Remplace le src par ton image -->
-                <img class="hero-img" src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d"
-                    alt="Photo de la collection Tommy Hilfiger">
-            </div>
+                <div class="sponsored-right" aria-label="Visuel Tommy Hilfiger" style="display:flex;gap:16px;align-items:center;">
+                  <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=600&q=80" class="sponsored-extra" style="width: 600px; height: 245px; object-fit: cover; border-radius: 8px;" alt="Nouvelles chaussures">
+                </div>
         </div>
     </section>
 
@@ -151,7 +149,7 @@
     <br>
 
     <section class="collection5-section">
-        <h2 style="text-align:center; margin-bottom:40px; color:#2b3940; font-weight:700; font-size:2rem;">
+        <h2 style="text-align:center; margin-bottom:40px; color:#2b3940; font-weight:700; font-size:2rem; font-family: 'DM Sans', sans-serif !important;">
             Découvrez nos univers
         </h2>
         <div class="collection5-wrapper">
@@ -273,25 +271,14 @@
     </br>
     <section class="promo-banner">
         <div class="promo-content">
-            <span class="promo-tag p-2 rounded text-md">Découvrez les meilleures marque</span>
-            <h2 class="promo-title" style="color: white;">MARQUE POUR TOUS</h2>
-            <p class="promo-dates">Du 07 au 20 Juillet</p>
-            <h3 class="promo-subtitle">Consultez Nos articles</h3>
-            <ul class="promo-details">
-                <li>Xiaomi Redmi A5 – 6.88″</li>
-                <li>4G – 8/32 Mpx – Garantie 12 Mois</li>
-                <li>Mercredi 16 Juillet à 12h30</li>
-                <li>Uniquement sur l’app</li>
-            </ul>
+            <span class="promo-tag p-2 rounded text-md" style="font-family: 'DM Sans', sans-serif !important;">DÉCOUVREZ LES MEILLEURES MARQUE</span>
         </div>
 
         <div class="promo-visual ">
-            <div class="price-badge">1 FCFA</div>
-            <div class="promo-image shadow" style="background-image: url('./ressources/img/habit/about-6.png'); background-size: cover;
-  background-position: center; background-repeat: no-repeat;">
-
+            <div class="promo-image shadow">
+                <img src="{% static 'ecommerce/ressources/image/articles/occas.jpg' %}" alt="Promo" />
+                <a href="#" class="promo-btn text-light">Découvrir</a>
             </div>
-            <a href="#" class="promo-btn text-light">Découvrir →</a>
 
         </div>
     </section>
@@ -319,22 +306,22 @@
     <div class="container_fluid_">
         <section id="banners" class="section-p1">
             <header class="ns-header" style="text-align: center;">
-                <h2 id="ns-services-title enGras" style="color: black; font-size: 40px; font-weight: bold;">Services
+                <h2 id="ns-services-title enGras" class="ns-services-title" style="color: black; font-size: 40px; font-weight: bold; font-family: 'DM Sans', sans-serif !important;">Services
                     Professionnels</h2>
-                <p style="font-size: 20px;">Des solutions sur mesure pour développer votre entreprise et atteindre vos
+                <p class="ns-services-subtitle" style="font-size: 20px; font-family: 'DM Sans', sans-serif !important;">Des solutions sur mesure pour développer votre entreprise et atteindre vos
                     objectifs.</p>
             </header>
             <div class="big-banners">
                 <div class="big-banners-1">
-                    <h4>Avec Oyeo etendez vos limites</h4>
-                    <h2>Besion d'un Professionnel competetent ?</h2>
-                    <span>trouvez facilement un peintre, un prestataire ou un expert pour tous vos besions</span>
+                    <h4 style="font-family: 'DM Sans', sans-serif !important;">Avec Oyeo etendez vos limites</h4>
+                    <h2 style="font-family: 'DM Sans', sans-serif !important;">Besion d'un Professionnel competetent ?</h2>
+                    <span style="font-family: 'DM Sans', sans-serif !important;">trouvez facilement un peintre, un prestataire ou un expert pour tous vos besions</span>
                     <!-- <button class="banner-btn">Learn More</button> -->
                 </div>
                 <div class="big-banners-2">
-                    <h4>Etes vous a l'etranger ? On s'occupe de tout</h4>
-                    <h2>upcomming season</h2>
-                    <span>The best classic dress is on sale at cara</span>
+                    <h4 style="font-family: 'DM Sans', sans-serif !important;">Etes vous a l'etranger ? On s'occupe de tout</h4>
+                    <h2 style="font-family: 'DM Sans', sans-serif !important;">upcomming season</h2>
+                    <span style="font-family: 'DM Sans', sans-serif !important;">The best classic dress is on sale at cara</span>
                     <!-- <button class="banner-btn">Collection</button> -->
                 </div>
             </div>
@@ -350,64 +337,64 @@
     <!-- ===== end services ===== -->
     <!-- ===== NYOTA: Testimonials ===== -->
     <section id="nyota-testimonials-section" class="nyota-wrap nyota-testimonials" aria-labelledby="nyota-test-title">
-        <h3 id="nyota-test-title" class="nyota-testimonials-title">Que disent nos meilleurs services — Que disent nos
+        <h3 id="nyota-test-title" class="nyota-testimonials-title" style="font-family: 'DM Sans', sans-serif !important;">Que disent nos meilleurs services — Que disent nos
             clients ?</h3>
 
         <div class="nyota-test-cards" role="list">
             <article class="nyota-test-card" role="listitem" aria-label="Témoignage 1">
-                <div class="nyota-test-rate">★★★★★ <span
-                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px">4.8 (124)</span></div>
-                <p class="nyota-test-text"><strong>Quality of work was excellent</strong><br>J'ai eu une très bonne
+                <div class="nyota-test-rate" style="font-family: 'DM Sans', sans-serif !important;">★★★★★ <span
+                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px;font-family: 'DM Sans', sans-serif !important;">4.8 (124)</span></div>
+                <p class="nyota-test-text" style="font-family: 'DM Sans', sans-serif !important;"><strong>Quality of work was excellent</strong><br>J'ai eu une très bonne
                     expérience
                     avec l'équipe — pro et rapide.</p>
                 <div class="nyota-test-footer">
-                    <div style="display:flex;align-items:center;gap:10px">
+                    <div style="display:flex;align-items:center;gap:10px;font-family: 'DM Sans', sans-serif !important;">
                         <div class="nyota-test-avatar"><img src="https://placehold.co/48x48/ffb6b6/ffffff?text=DD"
                                 alt="avatar Daniel"></div>
                         <div>
-                            <div style="font-weight:700">Daniel Davis</div>
-                            <div style="font-size:12px;color:#6b7280">7 Days Ago</div>
+                            <div style="font-weight:700;font-family: 'DM Sans', sans-serif !important;">Daniel Davis</div>
+                            <div style="font-size:12px;color:#6b7280;font-family: 'DM Sans', sans-serif !important;">7 Days Ago</div>
                         </div>
                     </div>
-                    <div style="color:#6b7280;font-size:13px">Service: Electrical</div>
+                    <div style="color:#6b7280;font-size:13px;font-family: 'DM Sans', sans-serif !important;">Service: Electrical</div>
                 </div>
             </article>
 
             <article class="nyota-test-card" role="listitem" aria-label="Témoignage 2">
-                <div class="nyota-test-rate">★★★★★ <span
-                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px">4.9 (89)</span></div>
-                <p class="nyota-test-text"><strong>Green Cleaning</strong><br>J'adore leur usage de produits éco sans
+                <div class="nyota-test-rate" style="font-family: 'DM Sans', sans-serif !important;">★★★★★ <span
+                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px;font-family: 'DM Sans', sans-serif !important;">4.9 (89)</span></div>
+                <p class="nyota-test-text" style="font-family: 'DM Sans', sans-serif !important;"><strong>Green Cleaning</strong><br>J'adore leur usage de produits éco sans
                     compromettre la propreté.</p>
                 <div class="nyota-test-footer">
-                    <div style="display:flex;align-items:center;gap:10px">
+                    <div style="display:flex;align-items:center;gap:10px;font-family: 'DM Sans', sans-serif !important;">
                         <div class="nyota-test-avatar"><img src="https://placehold.co/48x48/b6e3ff/ffffff?text=DD"
                                 alt="avatar">
                         </div>
                         <div>
-                            <div style="font-weight:700">Daniel Davis</div>
-                            <div style="font-size:12px;color:#6b7280">7 Days Ago</div>
+                            <div style="font-weight:700;font-family: 'DM Sans', sans-serif !important;">Daniel Davis</div>
+                            <div style="font-size:12px;color:#6b7280;font-family: 'DM Sans', sans-serif !important;">7 Days Ago</div>
                         </div>
                     </div>
-                    <div style="color:#6b7280;font-size:13px">Service: Cleaning</div>
+                    <div style="color:#6b7280;font-size:13px;font-family: 'DM Sans', sans-serif !important;">Service: Cleaning</div>
                 </div>
             </article>
 
             <article class="nyota-test-card" role="listitem" aria-label="Témoignage 3">
-                <div class="nyota-test-rate">★★★★★ <span
-                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px">4.7 (70)</span></div>
-                <p class="nyota-test-text"><strong>Luxury Car Cleaning</strong><br>Très bonne finition et service
+                <div class="nyota-test-rate" style="font-family: 'DM Sans', sans-serif !important;">★★★★★ <span
+                        style="font-weight:600;color:#6b7280;margin-left:8px;font-size:13px;font-family: 'DM Sans', sans-serif !important;">4.7 (70)</span></div>
+                <p class="nyota-test-text" style="font-family: 'DM Sans', sans-serif !important;"><strong>Luxury Car Cleaning</strong><br>Très bonne finition et service
                     premium.</p>
                 <div class="nyota-test-footer">
-                    <div style="display:flex;align-items:center;gap:10px">
+                    <div style="display:flex;align-items:center;gap:10px;font-family: 'DM Sans', sans-serif !important;">
                         <div class="nyota-test-avatar"><img src="https://placehold.co/48x48/d7ffd8/1a1a1a?text=DD"
                                 alt="avatar">
                         </div>
                         <div>
-                            <div style="font-weight:700">Daniel Davis</div>
-                            <div style="font-size:12px;color:#6b7280">7 Days Ago</div>
+                            <div style="font-weight:700;font-family: 'DM Sans', sans-serif !important;">Daniel Davis</div>
+                            <div style="font-size:12px;color:#6b7280;font-family: 'DM Sans', sans-serif !important;">7 Days Ago</div>
                         </div>
                     </div>
-                    <div style="color:#6b7280;font-size:13px">Service: Auto</div>
+                    <div style="color:#6b7280;font-size:13px;font-family: 'DM Sans', sans-serif !important;">Service: Auto</div>
                 </div>
             </article>
         </div>

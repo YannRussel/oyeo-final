@@ -160,7 +160,7 @@
 
 /* ================= Section Sponsorisée ================= */
 .sponsored {
-  background: var(--sponsored-bg);
+  background: #d32f2f; /* fond rouge */
   width: 92%;
   padding-block: 48px;
   margin: 0 auto;
@@ -194,7 +194,7 @@
 
 .sponsored-label {
   font-size: 12px;
-  color: var(--muted);
+  color: #fff;
   margin-bottom: 8px;
   letter-spacing: 0.02em;
   font-weight: 600;
@@ -206,14 +206,14 @@
   font-size: 44px;
   line-height: 1.02;
   font-weight: 700;
-  color: var(--title-color);
+  color: #ffffff;
 }
 
 .sponsored-subtitle {
   display: block;
   font-size: 34px;
   font-weight: 400;
-  color: var(--title-color);
+  color: rgba(255,255,255,0.95);
   margin-top: 6px;
 }
 
@@ -882,6 +882,7 @@ span {
 
 
 
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700;800&display=swap');
 
 :root{
   --ns-muted:#6b7280;
@@ -922,6 +923,12 @@ span {
   margin:8px 0 0;
   color:var(--ns-muted);
   font-size:0.95rem;
+}
+
+/* Specific font for Services Professionnels header on index */
+.ns-header .ns-services-title,
+.ns-header .ns-services-subtitle {
+  font-family: 'DM Sans', sans-serif !important;
 }
 
 /* grid 4 colonnes */
@@ -1212,7 +1219,7 @@ span {
 .nyota-testimonials {
   border-radius: 18px;
   padding: 44px 28px;
-  background: linear-gradient(90deg,#fff0f3 0%, #eafff3 100%);
+  background: #e6e6e6; /* gris un peu plus foncé */
   box-shadow: 0 10px 44px rgba(8,10,20,0.06);
   margin-bottom: 36px;
   position: relative;
@@ -1230,7 +1237,7 @@ span {
   flex-direction: column;
   gap: 14px;
 }
-.nyota-test-rate { display: flex; gap: 8px; align-items: center; color: #f5a623; font-weight: 800; }
+.nyota-test-rate { display: flex; gap: 8px; align-items: center; color: #000 !important; font-weight: 800; }
 .nyota-test-text { margin: 0; color: #233244; font-size: 15px; line-height: 1.5; }
 .nyota-test-footer { display: flex; justify-content: space-between; align-items: center; color: #6b7280; font-size: 14px; }
 .nyota-test-avatar { width: 44px; height: 44px; border-radius: 50%; overflow: hidden; }
@@ -1299,8 +1306,9 @@ span {
     gap: 32px;
     align-items: center;
     white-space: nowrap;
-    animation: nyota-uniq-scroll-left var(--nyota-uniq-scroll-duration, 20s) linear infinite;
-    animation-play-state: paused; /* paused par défaut */
+    --nyota-uniq-scroll-duration: 14s;
+    animation: nyota-uniq-scroll-left var(--nyota-uniq-scroll-duration) linear infinite !important;
+    animation-play-state: running !important; /* force l'animation */
     will-change: transform;
     transform: translateX(var(--nyota-uniq-start-offset, 0px));
   }
@@ -1316,17 +1324,23 @@ span {
     padding: 8px;
     background: rgba(0,0,0,0.03);
     border-radius: 6px;
+    transition: transform 180ms ease, box-shadow 180ms ease;
   }
 
-  /* démarrer l'animation seulement quand on survole le bloc entier (scopé) */
-  #nyota-logos-section-uniq:hover .nyota-uniq__track {
-    animation-play-state: running;
+  /* léger zoom au survol sur chaque logo */
+  #nyota-logos-section-uniq .nyota-uniq__track img:hover {
+    transform: scale(1.08);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.08);
   }
+
+  /* si l'on souhaite pauser sur hover du container, on peut décommenter :
+  #nyota-logos-section-uniq:hover .nyota-uniq__track { animation-play-state: paused; }
+  */
 
   /* animation scoping name unique */
   @keyframes nyota-uniq-scroll-left {
-    0%   { transform: translateX(var(--nyota-uniq-start-offset)); }
-    100% { transform: translateX(calc(var(--nyota-uniq-start-offset) - 50%)); }
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
   }
 
   /* reduced motion respecté */
